@@ -1,2 +1,2 @@
 # dtree
-Domain tree library.
+Domain tree library, NOT thread-safe.
