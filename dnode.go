@@ -1,9 +1,5 @@
 package dtree
 
-import (
-	"sync"
-)
-
 // dNode domain node
 type dNode struct {
 	// levelDomain top-level-domain, first-level-domain, not include '.'
@@ -12,8 +8,6 @@ type dNode struct {
 	data interface{}
 	// pre previous dNode
 	pre *dNode
-	// lock lock for next map
-	lock sync.RWMutex
 	// next next dNode info
 	next map[string]*dNode
 }
